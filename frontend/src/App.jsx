@@ -71,7 +71,7 @@ function App() {
       return '/api'; // Use local Vite proxy
     }
     // In production, fallback to VITE_API_URL or a fallback Render domain
-    return import.meta.env.VITE_API_URL || 'https://graph-tree-bfhl.onrender.com';
+return import.meta.env.VITE_API_URL || 'https://bajaj-graph-tree-bfhl.onrender.com';
   };
 
   const handleSubmit = async (e) => {
