@@ -1,0 +1,21 @@
+{
+  "name": "graph-tree-bfhl-root",
+  "version": "1.0.0",
+  "description": "Full-stack application for graph/tree hierarchy parsing and cycle detection",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install-all": "npm install",
+    "dev": "concurrently --kill-others \"npm run dev --workspace=frontend\" \"npm run dev --workspace=backend\"",
+    "start:backend": "npm run start --workspace=backend",
+    "dev:backend": "npm run dev --workspace=backend",
+    "build:frontend": "npm run build --workspace=frontend",
+    "preview:frontend": "npm run preview --workspace=frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
